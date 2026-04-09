@@ -477,6 +477,28 @@ nav ul li a:hover {
     /* Serviços */
     .services-grid {
         grid-template-columns: 1fr;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    .section-title h2 {
+        font-size: 1.1rem; /* Título menor para não ocupar a tela toda */
+        margin-bottom: 40px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr; /* 1 coluna: cards ficam um abaixo do outro */
+        gap: 30px;
+    }
+
+    .service-card {
+        max-width: 450px; /* Garante que o card não fique largo demais em telas médias */
+        margin: 0 auto;  /* Centraliza o card na tela */
+    }
+
+    /* Ajuste do botão de orçamento no mobile */
+    .center-btn {
+        margin-top: 50px;
     }
 
     /* Sobre */
@@ -484,13 +506,28 @@ nav ul li a:hover {
         flex-direction: column-reverse;
         gap: 30px;
         text-align: center;
+        padding-right: 2rem;
+        padding-left: 2rem;
     }
     .about-img {
         justify-content: center;
     }
+
+    /* Ajuste da Seção Sobre no Celular */
     .about-text h2 {
-        font-size: 1.8rem;
+        font-size: 1.1rem; /* Diminui o título para não quebrar em muitas linhas */
+        margin-bottom: 20px;
+        line-height: 1.2;
     }
+
+    .about-text p {
+        font-size: 0.70rem; /* Fonte um pouco menor para caber mais conteúdo */
+        line-height: 1.6;   /* Reduz o espaçamento entre linhas para o texto não "esticar" demais */
+        margin-bottom: 12px;
+        text-align: left;    /* Ou center, se preferir o estilo centralizado no mobile */
+    }
+
+   
 
     /* Footer */
     .footer-grid {
